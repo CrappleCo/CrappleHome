@@ -5,204 +5,46 @@
         <title>CrappleVideos</title>
           <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
         <style>
- /* Add a black background color to the top navigation bar */
-.topnav {
-    overflow: hidden;
-    background-color: #e9e9e9;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-/* Style the search box inside the navigation bar */
-.topnav input[type="text"] {
-    float: right;
-    padding: 6px;
-    border: none;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 17px;
-}
-
-/* When the screen is less than 600px wide, stack the links and the search field vertically */
-@media screen and (max-width: 600px) {
-    .topnav a,
-    .topnav input[type="text"] {
-        float: none;
-        display: block;
-        text-align: left;
-        width: 100%;
-        margin: 0;
-        padding: 14px;
-    }
-    .topnav input[type="text"] {
-        border: 1px solid #ccc;
-    }
-}
-
-
-/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
-/* Style the dropdown container */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* Style the dropdown button */
-.dropbtn {
-    background-color: #f9f9f9;
-    color: #333;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-/* Style the dropdown content (hidden by default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #e9e9e9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-/* Style the dropdown links */
-.dropdown-content a {
-    color: #333;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change link color on hover */
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-/* Show the dropdown content when the button is hovered */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-/* Style the footer container */
-footer {
-    background-color: #e9e9e9;
-    color: black;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Style the footer links */
-footer a {
-    color: black;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-/* Change link color on hover */
-footer a:hover {
-    color: purple;
-}
-
-        .h1{
-            text-align:center;
-        }
-           /* Button Styles */
-        button {
-            background-color: #3498db;
-            color: #ffffff;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-            margin-right: 10px;
-        }
-
-        /* Hover Effect */
-        button:hover {
-            background-color: #2980b9;
-        }
-            /* Style for the video container */
-        .video-container {
-            display: none; /* Initially hide the videos */
-        }
-
-            @media (max-width: 768px) {
-  /* Styles for small screens */
-}
-@media (min-width: 769px) {
-  /* Styles for larger screens */
-}
-
+  <link rel="stylesheet" href="common-styles.css">
         </style>
     </head>
     <body>
-<div class="topnav">
-    <a href="https://crappleco.github.io/CrappleHome/">Home</a>
-    <a href="crapplenews.html">News</a>
-   <a  class="active" href="videos.html">Videos</a>
-      <input type="text" id="searchInput" placeholder="Search..">
-</div>
-<div class="dropdown">
-    <button class="dropbtn">Menu ▼</button>
-    <div class="dropdown-content">
-        <a href="#contact">Contact</a>
-        <a href="aboutus.html">About</a>
-        <a href="#services">Services</a>
-        <!-- Add more menu items as needed -->
-    </div>
-</div>
-  <div class="container">
+   <ul class="nav-menu">
+        <li><a href="https://crappleco.github.io/CrappleHome/">Home</a></li>
+        <li>
+            <a href="#">Services</a>
+            <ul class="dropdown">
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Graphic Design</a></li>
+                <li><a href="#">SEO</a></li>
+            </ul>
+        </li>
+        <li><a href="crapplenews.html">News</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li>
+            <a href="#">More</a>
+            <ul class="dropdown">
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </li>
+    </ul>  
+    <div class="container">
         <h1 class = "h1" style="font-size:10vw">Crapple Video System</h1>
     </div>
-   <!-- Button to load Video 1 -->
-    <button onclick="loadVideo('dQw4w9WgXcQ')">Play Sus Vid 1</button>
-
-    <!-- Button to load Video 2 -->
-    <button onclick="loadVideo('kvxCU_lQwKM')">Play Sus Vid 2</button>
-
-    <!-- Container for the embedded video -->
-    <div id="video-container"></div>
-
-    <script>
-        function loadVideo(dQw4w9WgXcQ) {
-            // Replace the following URL with your YouTube embed URL
-            const embedUrl = `https://www.youtube.com/embed/dQw4w9WgXcQ?si=pFVi9tuK8j7bv2Uq`; // Add autoplay parameter
-
-        function loadVideo(kvxCU_lQwKM) {
-            // Replace the following URL with your YouTube embed URL
-            const embedUrl = `https://www.youtube.com/embed/kvxCU_lQwKM?si=sZKUzF1pZ8qWSZaL`; // Add autoplay parameter
-
-            // Create an iframe element
-            const iframe = document.createElement('iframe');
-            iframe.src = embedUrl;
-            iframe.width = '560';
-            iframe.height = '315';
-            iframe.frameBorder = '0';
-            iframe.allowFullscreen = true;
-
-            // Append the iframe to the video container
-            const videoContainer = document.getElementById('video-container');
-            videoContainer.innerHTML = ''; // Clear existing content
-            videoContainer.appendChild(iframe);
-        }
-    </script>
+        
+        <video width="320" height="240" controls>
+     <source src="eggdogsong.mp4" type="video/mp4" height = "200">
+        This video? You cant watch it.
+        </video>
+        
+        <video width="320" height="240" controls>
+     <source src="https://www.youtube.com/embed/kvxCU_lQwKM?si=sZKUzF1pZ8qWSZaL" type="video/mp4" height = "200">
+        This video? You cant watch it.
+        </video>
+        
     <br>
     
 <footer>
