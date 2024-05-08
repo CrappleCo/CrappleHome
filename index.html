@@ -1,166 +1,153 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
         <title>Crapple</title>
-
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
         <style>
-                    .h1{
-            text-align:center;
-        }
+            /* Dropdown Button */
+.dropbtn {
+    background-color: black;
+    color: #00ff00;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
 
-        @media (max-width: 768px) {
-          /* Styles for small screens */
-        }
-        @media (min-width: 769px) {
-          /* Styles for larger screens */
-        }
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: black;
+}
 
-        /* Basic styling for the navigation menu */
-        ul.nav-menu {
-            list-style-type: none;
-            margin: 0;
-            padding: 14px 16px;
-            background-color: #333;
-            font-family: Arial, sans-serif;
-        }
-
-        ul.nav-menu li {
-            display: inline-block;
-            margin-right: 20px;
-        }
-
-        ul.nav-menu li a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        ul.nav-menu li a:hover {
-            color: #ffc107; /* Change to your desired hover color */
-        }
-
-        /* Dropdown styles */
-        ul.nav-menu li ul.dropdown {
-            display: none;
-            position: absolute;
-            background-color: #444;
-            padding: 0;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        }
-
-        ul.nav-menu li:hover ul.dropdown {
-            display: block;
-        }
-
-        ul.nav-menu li ul.dropdown li {
-            display: block;
-            margin: 0;
-            padding: 10px;
-            border-bottom: 1px solid #555;
-        }
-
-        ul.nav-menu li ul.dropdown li:last-child {
-            border-bottom: none;
-        }
-
-        ul.nav-menu li ul.dropdown li a {
-            color: #ddd;
-            font-size: 14px;
-            transition: color 0.3s ease;
-        }
-
-        ul.nav-menu li ul.dropdown li a:hover {
-            color: #ffc107; /* Change to your desired hover color */
-        }
-        
-        /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
-/* Style the dropdown container */
+/* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
 
-
-/* Style the dropdown links */
+/* Links inside the dropdown */
 .dropdown-content a {
-    color: #333;
+    color: #00ff00;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-/* Change link color on hover */
+/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: black;
 }
 
-/* Show the dropdown content when the button is hovered */
-.dropdown:hover .dropdown-content {
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
     display: block;
 }
-/* Style the footer container */
-footer {
-    background-color: #333;
-    color: #333;
-    padding: 20px;
-    font-weight: bold;
-    text-align: center;
-}
-
-/* Style the footer links */
-footer a {
-    color: white;
-    text-decoration: none;
-    margin:14px;
-}
-
-/* Change link color on hover */
-footer a:hover {
-    color: #ffc107;
-}
-
+        /* Basic styling for the header */
+        .header {
+            background-color: black;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .logo {
+            font-size: 24px;
+            text-decoration: none;
+            color: #00ff00;
+            animation: blinker 1s linear infinite;
+        }
+         .nav-items {
+            margin-top: 10px;
+        }
+        .nav-items a {
+            margin-right: 20px;
+            color: #00ff00;
+            text-decoration: none;
+        }
+        
+        /* Styling for the footer */
+        footer {
+            background-color: black;
+            color: #00ff00;
+            padding: 10px;
+            text-align: center;
+        }
+                body {
+            background-color: #000;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+  h1 {
+            font-size: 24px;
+            margin-top: 50px;
+        }
+      p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+          .blink {
+            animation: blinker 1s linear infinite;
+        }
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+       @media (max-width: 768px) {
+          /* Styles for small screens */
+        }
+        @media (min-width: 769px) {
+          /* Styles for larger screens */
+        }
+      
         </style>
     </head>
     <body>
-   <ul class="nav-menu">
-        <li><a href="https://crappleco.github.io/CrappleHome/">Home</a></li>
-        <li>
-            <a href="#">Services</a>
-            <ul class="dropdown">
-                <li><a href="#">Web Design</a></li>
-                <li><a href="#">Graphic Design</a></li>
-                <li><a href="#">SEO</a></li>
-            </ul>
-        </li>
-        <li><a href="crapplenews.html">News</a></li>
-        <li><a href="com.html">Comments</a></li>
-        <li><a href="videos.html">Videos</a></li>
-        <li>
-            <a href="#">More</a>
-            <ul class="dropdown">
-                <li><a href="aboutus.html">About</a></li>
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul>
-        </li>
-    </ul>
-        <div class="container">
-        <h1 class = "h1" style="font-size:10vw">Welcome To Crapple!</h1>
+
+
+<header class="header">
+        <a href="#" class="logo">Crapple</a>
+        <nav class="nav-items">
+            <a href="index.html">Home</a>
+            <a href="crapplenews.html">News</a>
+            <a href="com.html">Comment</a>
+            <a href="videos.html">Videos</a>
+<div class="dropdown">
+    <button onclick="toggleDropdown()" class="dropbtn">More</button>
+    <div id="myDropdown" class="dropdown-content">
+                <a href="aboutus.html">About</a>
+            <a href="#">FAQ's</a>
+            <a href="#">Privacy policy</a>
+            
+    </div>
+</div>
+        </nav>
+    </header>
+<p class="blink">Welcome To Crapple!</p>
+
+<script>
+function toggleDropdown() {
+    var dropdown = document.getElementById("myDropdown");
+    dropdown.classList.toggle("show");
+}
+</script>      <div class="container">
         <p>This website talks about Cat news and more.</p>
     </div>
 
 <footer>
     <p>© 2019 Crapple All rights reserved | Contact: Charliethecatstudios@outlook.com </p>
-    <ul>
-        <p><a href="#privacy">Privacy Policy</a></p>
-        <p><a href="#terms">Terms of Service</a></p>
-        <p><a href="#contact">Contact Us</a></p>
-    </ul>
 </footer>
+
     </body>
 </html>
