@@ -124,6 +124,38 @@ footer a:hover {
 }
 
         </style>
+            <style>
+    body { 
+        font-family: Arial, sans-serif; 
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
+    }
+    header, nav, main, footer { padding: 20px; }
+    nav, footer {
+        width: 100%; /* Set width to 100% */
+        margin: 0; /* Remove default margin */
+    }
+    nav { 
+        background: #333; 
+    }
+    nav a { 
+        color: white; 
+        text-decoration: none; 
+        padding: 0 15px; 
+    }
+    nav a:hover { 
+        background: #ddd; 
+        color: black; 
+    }
+    main { 
+        margin: 15px 0; 
+    }
+    footer { 
+        background: #333; 
+        color: white; 
+        text-align: center; 
+    }
+</style>
     </head>
     <body>
 <ul class="nav-menu">
@@ -146,6 +178,14 @@ footer a:hover {
                 <li><a href="#">FAQs</a></li>
                 <li><a href="#">Privacy Policy</a></li>
             </ul>
+            
+             <!-- Search form starts here -->
+    <form action="https://www.google.com/search" method="get" style="display: inline;">
+        <input type="hidden" name="sitesearch" value="https://crappleco.github.io/CrappleHome/" />
+        <input type="text" name="q" placeholder="Search..." style="margin-left: 10px;"/>
+        <input type="submit" value="Search" />
+    </form>
+    <!-- Search form ends here -->
         </li>
     </ul>
     <h1 class = "h1" style="font-size:10vw">About Us</h1>
@@ -182,11 +222,7 @@ footer a:hover {
     
 <footer>
     <p>© 2019 Crapple. All rights reserved.</p>
-    <ul>
-        <p><a href="#privacy">Privacy Policy</a></p>
-        <p><a href="#terms">Terms of Service</a></p>
-        <p><a href="#contact">Contact Us</a></p>
-    </ul>
+    
 </footer>
 
     </body>
