@@ -101,26 +101,7 @@
         .dropdown:hover .dropdown-content {
             display: block;
         }
-        /* Style the footer container */
-        footer {
-            background-color: #333;
-            color: #333;
-            padding: 18px;
-            font-weight: bold;
-            text-align: center;
-        }
-        
-        /* Style the footer links */
-        footer a {
-            color: white;
-            text-decoration: none;
-            margin:15px;
-        }
-        
-        /* Change link color on hover */
-        footer a:hover {
-            color: #ffc107;
-        }
+
 
 
     header, nav, main, footer { padding: 20px; }
@@ -142,9 +123,4 @@
     }
     main { 
         margin: 16px 0; 
-    }
-    footer { 
-        background: #333; 
-        color: white; 
-        text-align: center; 
     }
