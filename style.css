@@ -125,7 +125,7 @@
 
     header, nav, main, footer { padding: 20px; }
     nav, footer {
-        width: 106%; /* Set width to 100% */
+        width: 100%; /* Set width to 100% */
         margin: 0; /* Remove default margin */
     }
     nav { 
