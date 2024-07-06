@@ -6,7 +6,26 @@
            <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" href="style.css" type="text/css">
 
-    </head>
+<style>
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.article-card {
+    width: 45%;
+    margin: 2.5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    background-color: #fff;
+}
+.article-card img {
+    width: 100%;
+    height: auto;
+}
+</style>
+
+        
+    </head>    
     <body>
    <ul class="nav-menu">
         <li><a href="https://crappleco.github.io/CrappleHome/">Home</a></li>
@@ -36,24 +55,33 @@
         <div class="container">
         <h1 class = "h1" style="font-size:10vw">Crapple News!</h1>
 
-        <div class="container">
-        <div class="article-card">
-            <h3>Breaking News: Todd and Charlie are neck and neck!</h3>
-            <p>The faceoff of the century! Read the full story here</p>
-            <a href = "catpolitics.html">Read more</a>
-            </div> 
-            <h3>Breaking News: A man has tried to kidnap 5 cats!!!</h3>
-            <p>A catnapping has happened read the full story here</p>
-            <a href = "catnapping.html">Read more</a>
-            </div> 
-            <h3>Breaking News: A fight has happened </h3>
-            <p>A fight has happened read the full story here</p>
-            <a href="catfight.html">Read more</a>
-        </div>
-            <h3>Breaking News: Charlie loafed on the wet spot on the couch!!!</h3>
-            <p>Charlie the cat loafed on the couch on a huge wet spot above Todd causing Todd to be a hostage to Charlie, and if Todd makes one wrong move he will get attacked.</p>
-            <a href="couchcaper.html">Read more</a>
-        </div>    
+ <div class="container">
+    <div class="article-card">
+        <img src="image1.jpg" alt="Image 1">
+        <h3>Breaking News: Todd and Charlie are neck and neck!</h3>
+        <p>The faceoff of the century! Read the full story here</p>
+        <a href="catpolitics.html">Read more</a>
+    </div>
+    <div class="article-card">
+        <img src="image2.jpg" alt="Image 2">
+        <h3>Breaking News: A man has tried to kidnap 5 cats!!!</h3>
+        <p>A catnapping has happened read the full story here</p>
+        <a href="catnapping.html">Read more</a>
+    </div>
+    <div class="article-card">
+        <img src="image3.jpg" alt="Image 3">
+        <h3>Breaking News: A fight has happened</h3>
+        <p>A fight has happened read the full story here</p>
+        <a href="catfight.html">Read more</a>
+    </div>
+    <div class="article-card">
+        <img src="image4.jpg" alt="Image 4">
+        <h3>Breaking News: Charlie loafed on the wet spot on the couch!!!</h3>
+        <p>Charlie the cat loafed on the couch on a huge wet spot above Todd causing Todd to be a hostage to Charlie, and if Todd makes one wrong move he will get attacked.</p>
+        <a href="couchcaper.html">Read more</a>
+    </div>
+</div>
+
 
 
         <!-- Add more article cards here -->
